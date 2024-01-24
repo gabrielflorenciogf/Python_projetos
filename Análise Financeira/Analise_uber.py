@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Carregar a planilha e remover espaços extras nos nomes das colunas
-file_path = r'C:\Users\Livia Shara\Desktop\Gabriel Florêncio\Python\Análise Financeira\uber geral.xlsx'
+file_path = r'SELECIONE O CAMINHO'
 df = pd.read_excel(file_path)
 df.columns = df.columns.str.strip()
 

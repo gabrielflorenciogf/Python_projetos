@@ -8,7 +8,7 @@ class CadastroGUI:
         self.root.title("Cadastro de Funcionários")
 
         # Carregar a planilha diretamente
-        self.df = pd.read_excel(r'C:\Users\Livia Shara\Desktop\Gabriel Florêncio\Python\Cadastro\Cadastro.xlsx')
+        self.df = pd.read_excel(r'SELECIONE O CAMINHO')
 
         self.label_status = ttk.Label(root, text="Planilha carregada: Cadastro.xlsx")
         self.label_status.pack(pady=10)
@@ -47,7 +47,7 @@ class CadastroGUI:
             self.mostrar_mensagem(f"Erro ao cadastrar funcionário: {str(e)}")
 
     def atualizar_planilha(self):
-        self.df.to_excel(r'C:\Users\Livia Shara\Desktop\Gabriel Florêncio\Python\Cadastro\Cadastro.xlsx', index=False)
+        self.df.to_excel(r'SELECIONE O CAMINHO', index=False)
         self.label_status.config(text="Cadastro atualizado na planilha.")
 
     def limpar_campos(self):

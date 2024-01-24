@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Carregar a planilha
-caminho_arquivo = r'C:\Users\Livia Shara\Desktop\Gabriel Florêncio\Python\Análise de Vendas\Base de Dados Vendas.xlsx'
+caminho_arquivo = r'SELECIONE O CAMINHO DESEJADO'
 df = pd.read_excel(caminho_arquivo)
 
 # Remover caracteres especiais
@@ -46,6 +46,6 @@ print(valor_medio_desconto_por_segmento)
 # Outras análises específicas podem ser adicionadas conforme necessário
 
 # Salvando a planilha modificada
-df.to_excel(r'C:\Users\Livia Shara\Desktop\Gabriel Florêncio\Python\Análise de Vendas\Base de Dados Vendas_Formatada.xlsx', index=False)
+df.to_excel(r'SELECIONE O CAMINHO', index=False)
 
 print("\nAnálise completa realizada e planilha formatada salva com sucesso.")
